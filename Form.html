@@ -6,8 +6,8 @@
 	<body>
 		<h1>REGISTRATION FORM</h1>
 	<form>
-		<input type="text" placeholder="Your Name" pattern="[a-zA-Z]+"/> <br /><br />
-		<input type="text" placeholder="Your Father's Name" pattern="[a-zA-Z]+"/> <br /><br />
+		<input type="text" placeholder="Your Name" pattern="[a-zA-Z]+ "/> <br /><br />
+		<input type="text" placeholder="Your Father's Name" pattern="[a-zA-Z]+ "/> <br /><br />
 		DOB: <input type="date"/> <br /><br />
 		Gender:<br />
 		Male: <input type="radio" value="male" name="gender"/> 
@@ -18,13 +18,19 @@
 		English : <input type="radio" name="language"/> 
 		Hindi: <input type="radio" name="language"/> 
 		Others: <input type="radio" name="language"/> <br /><br />
-		
-		<input type="text" placeholder="Phone Number" pattern="/d{10}"/> <br /><br />
+		Languages known:<br />
+                English : <input type="checkbox" value="eng" checked/>
+                Malayalam: <input type= "checkbox" value="mal" />
+                Hindi: <input type="checkbox" value="hin" />
+                Others: <input type="checkbox" value="oth" /><br /><br />
+		<input type="text" placeholder="Phone Number" pattern="/d{10}" /> <br /><br />
 		<input type="email" placeholder="Email id"/> <br /><br />
 		<input type="password" placeholder="Your Password"/> 
 		<input type="password" placeholder="Confirm password"/> <br /><br />
-		<input type="submit" value="Register"/>
-		
+		<button>
+                <input type="submit" value="Register"/>
+                <input type="reset"/>
+		</button>
 	</form>
 	</body>
 </html>
